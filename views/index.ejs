@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<title>Zuzia - Anasayfa</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://pro.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet"> 
+<link rel="icon" href="<%= av %>" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta content="Zuzia Gelişmiş Komutları İle İnovasyon Yaratmaya Gelen Türkçe Discord Botu!" name="description">
+<meta name="author" content="Zuzia RodzeN">
+<meta name="theme-color" content="#303136">
+<meta name="title" content="Zuzia">
+<meta property="og:image" content="https://cdn.discordapp.com/avatars/924363100608675892/7c885158691eee7d7dbab60584850172.png?size=2048" />
+<meta property="og:keywords" content="Zuzia Gelişmiş Komutları İle İnovasyon Yaratmaya Gelen Türkçe Discord Botu!">
+<meta property="og:type" content="website">
+<meta property="og:image:width" content="300">
+<meta property="og:image:height" content="300">
+<meta property="og:image:margin-top" content="50%">
+<meta content="" name="keywords">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+</head>
+<body onload="preloader()">
+<div class="screen">
+<i class="fas fa-spinner"></i>  
+</div>
+<div id="navbar" class="navbar fixed">
+<span id="logo" class="logo">ZUZIA</span>
+<button onclick="navbar()" class="nav-open-btn"><i class="far fa-bars"></i></button>
+<ul class="list">
+  <li class="list-item"><a href="/davet">Davet Et</a></li>  
+  <li class="list-item"><a href="/destek">Destek</a></li>
+</ul>
+</div><br><br><br><br>
+<div class="container-fluid jumptron bg-1">
+<img class="img" src="https://cdn.discordapp.com/attachments/957286289659531334/963429676267733032/zuzi.png">
+<h2 class="c-6">ZUZIA</h2>
+<p class="c-10">Zuzia'nın gelişmiş komutları ile sunucuza renk katın.</p>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#181818" fill-opacity="1" d="M0,64L48,58.7C96,53,192,43,288,69.3C384,96,480,160,576,170.7C672,181,768,139,864,128C960,117,1056,139,1152,144C1248,149,1344,139,1392,133.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg><div class="container">
+<div class="row justify-content-center">
+<div class="col-7 card info text-center" data-aos="fade-up">
+<br>
+<i class="c-6 icon fas fa-bolt"></i>
+<h4 class="c-6">Hız</h4>
+<p class="c-10">O kadar hızlıki komutları kullanırken pinge girmeyeceksiniz.</p>
+</div>
+<div class="col-7 card info text-center" data-aos="fade-up">
+<br>
+<i class="c-6 icon fas fa-shield-check"></i>
+  <h4 class="c-6">Moderasyon</h4>
+<p class="c-10">Gelişmiş moderasyon ile sunucunuz güvende.</p>
+</div>
+<div class="col-7 card info text-center" data-aos="fade-up">
+<br>
+<i class="icon c-6 fas fa-laugh-beam"></i>
+<h4 class="c-6">Eğlence</h4>
+<p class="c-10">Eğlence ve roleplay komutları ile sunucunuz renklenecek.</p>
+</div>
+</div> 
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#181818" fill-opacity="1" d="M0,128L34.3,128C68.6,128,137,128,206,154.7C274.3,181,343,235,411,261.3C480,288,549,288,617,293.3C685.7,299,754,309,823,314.7C891.4,320,960,320,1029,320C1097.1,320,1166,320,1234,288C1302.9,256,1371,192,1406,160L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+<div style="margin-top:-4px;" class="container-fluid bg-1">
+<br>
+<div class="rowm justify-content-center">
+<div class="bot-info c-10 col-m-6 text-center">
+<h3>Sunucu</h3> 
+<b><span data-purecounter-start="0" data-purecounter-end="<%= sunucu %>" data-purecounter-duration="1" class="purecounter"></span>+</b>
+</div>
+<div class="bot-info c-10 col-m-6 text-center">
+<h3>Üye</h3> 
+<b><span data-purecounter-start="0" data-purecounter-end="<%= uye %>" data-purecounter-duration="0.7" class="purecounter"></span>+</b>
+</div>
+<div class="bot-info c-10 col-m-6 text-center">
+<h3>Kanal</h3> 
+<b><span data-purecounter-start="0" data-purecounter-end="<%= kanal %>" data-purecounter-duration="0.9" class="purecounter"></span>+</b>
+</div>
+</div>
+<br>
+<center>
+<h3 class="c7">Komutlar</h3>  
+</center>
+<div class="row justify-content-center">
+<div id="mod-box" class="commands w-80">
+<h4 class="title">Moderasyon</h4>
+<button onclick="mod()" id="mod-btn" class="command-btn">+</button>
+<ul id="mod" class="command w-80">
+<li>*ban</li>
+<li>*unban</li>
+<li>*kick</li>
+<li>*mute</li>
+<li>*unmute</li>
+<li>*warn</li>
+<li>*sil</li>
+<li>*purge</li>
+  </ul>
+</div>
+<div id="set-box" class="commands w-80">
+<h4 class="title">Ayarlamalı</h4>
+<button onclick="set()" id="set-btn" class="command-btn">+</button>
+<ul id="set" class="command w-80">
+<li>*link-engel</li>
+<li>*caps-engel</li>
+<li>*tavsiye-kanal</li>
+<li>*hgbb</li>
+</div>
+<div id="genel-box" class="commands w-80">
+<h4 class="title">Genel</h4>
+<button onclick="genel()" id="genel-btn" class="command-btn">+</button>
+<ul id="genel" class="command w-80">
+<li>*afk</li>
+<li>*profil</li>
+<li>*avatar</li>
+<li>*baner</li>
+<li>*tavsiye</li>
+<li>*sicil</li>
+<li>*öneri</li>
+<li>*bug</li>
+<li>*davet</li>
+<li>*destek</li>
+  </ul>
+</div>
+<div id="fun-box" class="commands w-80">
+<h4 class="title">Eğlence</h4>
+<button onclick="fun()" id="fun-btn" class="command-btn">+</button>
+<ul id="fun" class="command w-80">
+<li>*sarıl</li>
+<li>*öp</li>
+<li>*öldür</li>
+<li>*aşk-ölçer</li>
+<li>*reverse</li>
+<li>*dosya-oluştur</li>
+  </ul>
+</div>
+<div id="rp-box" class="commands w-80">
+<h4 class="title">Roleplay</h4>
+<button onclick="rp()" id="rp-btn" class="command-btn">+</button>
+<ul id="rp" class="command w-80">
+<li>*cüzdan :</li>
+<li>*günlük-ödül :</li>
+<li>*para-gönder :</li>
+<li>*market :</li>
+<li>*satın-al :</li>
+<li>*kullan :</li>
+<li>*evlen :</li>
+<li>*boşan :</li>
+<li>*soy :</li>
+  </ul>
+</div>
+</div>
+  </div>
+  
+<div class="container-fluid">
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320"><path fill="#181818" fill-opacity="1" d="M0,96L40,112C80,128,160,160,240,144C320,128,400,64,480,48C560,32,640,64,720,69.3C800,75,880,53,960,58.7C1040,64,1120,96,1200,96C1280,96,1360,64,1400,48L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+<div class="row justify-content-center">
+<div class="server-card col-6">
+<div class="card-header bg-server-1">
+</div>
+<div class="card-body">
+<b>Codetron</b>
+<p><span class="tags">#sohbet</span> <span class="tags">#web</span> </p>
+  </p>
+</div>
+<div class="card-footer">
+<button class="join-btn" onload="swa()">
+Sunucuya Katıl  
+</button>
+</div>
+</div>
+<div class="server-card col-6">
+<div class="card-header bg-server-2">
+</div>
+<div class="card-body">
+<b>Tokyo Code</b>
+<p><span class="tags">#sohbet</span> <span class="tags">#discordbot</span></p>
+  </p>
+</div>
+<div class="card-footer">
+<button class="join-btn" onload="swb()">
+Sunucuya Katıl
+</button>
+</div>
+</div>
+<div class="server-card col-6">
+<div class="card-header bg-server-3">
+</div>
+<div class="card-body" >
+<b>Bear Development</b>
+<p><span class="tags">#sohbet</span> <span class="tags">#discordbot</span></p>
+</div>
+<div class="card-footer">
+<button onload="swc()" class="join-btn">
+<a></a>Sunucuya Katıl  
+</button>
+</div>
+</div>
+</div>
+</div>
+</div> 
+<br><br><br>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#181818" fill-opacity="1" d="M0,128L60,117.3C120,107,240,85,360,96C480,107,600,149,720,144C840,139,960,85,1080,69.3C1200,53,1320,75,1380,85.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+  <div style="margin-top:-1vh;" class="container-fluid bg-1 text-center">
+    <br>
+    <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+<p onclick="yukari()">
+              <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/xsdtfyne.json"
+    trigger="hover"
+    colors="primary:#ffffff"
+    state="hover-2"
+    style="width:50px;height:50px">
+</lord-icon>
+        </p>
+    <small>Copyright &copy; Zuzia - <span data-purecounter-start="0" data-purecounter-end="<%= ping %>" data-purecounter-duration="0.9" class="purecounter"></span>ms</small>
+  <br><br>
+    </div>
+  </body>
+  <script>
+  AOS.init();
+</script>
+  <script>!function(e){var t={};function n(r){if(t[r])return t[r].exports;var a=t[r]={i:r,l:!1,exports:{}};return e[r].call(a.exports,a,a.exports,n),a.l=!0,a.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var a in e)n.d(r,a,function(t){return e[t]}.bind(null,a));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="/",n(n.s=2)}([,,function(e,t,n){e.exports=n(3)},function(e,t,n){"use strict";function r(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}n.r(t);new(function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.registerEventListeners()}var t,n,a;return t=e,(n=[{key:"registerEventListeners",value:function(){var e=this,t=document.querySelectorAll(".purecounter");if(this.intersectionListenerSupported())for(var n=new IntersectionObserver(this.animateElements.bind(this),{root:null,rootMargin:"20px",threshold:.5}),r=0;r<t.length;r++)n.observe(t[r]);else window.addEventListener&&(this.animateLegacy(t),window.addEventListener("scroll",function(n){e.animateLegacy(t)},{passive:!0}))}},{key:"animateLegacy",value:function(e){for(var t=0;t<e.length;t++){!0===this.parseConfig(e[t]).legacy&&this.elementIsInView(e[t])&&this.animateElements([e[t]])}}},{key:"animateElements",value:function(e,t){var n=this;e.forEach(function(e){var r=void 0!==e.target?n.parseConfig(e.target):n.parseConfig(e);return r.duration<=0?e.innerHTML=r.end.toFixed(r.decimals):!t&&!n.elementIsInView(e)||t&&e.intersectionRatio<.5?e.target.innerHTML=r.start>r.end?r.end:r.start:void setTimeout(function(){return void 0!==e.target?n.startCounter(e.target,r):n.startCounter(e,r)},r.delay)})}},{key:"startCounter",value:function(e,t){var n=this,r=(t.end-t.start)/(t.duration/t.delay),a="inc";t.start>t.end&&(a="dec",r*=-1),r<1&&t.decimals<=0&&(r=1);var i=t.decimals<=0?parseInt(t.start):parseFloat(t.start).toFixed(t.decimals);e.innerHTML=i,!0===t.once&&e.setAttribute("data-purecounter-duration",0);var o=setInterval(function(){var s=n.nextNumber(i,r,t,a);e.innerHTML=n.formatNumber(s,t),((i=s)>=t.end&&"inc"==a||i<=t.end&&"dec"==a)&&(clearInterval(o),i!=t.end&&(e.innerHTML=t.decimals<=0?parseInt(t.end):parseFloat(t.end).toFixed(t.decimals)))},t.delay)}},{key:"parseConfig",value:function(e){for(var t=[].filter.call(e.attributes,function(e){return/^data-purecounter-/.test(e.name)}),n={start:0,end:9001,duration:2e3,delay:10,once:!0,decimals:0,legacy:!0},r=0;r<t.length;r++){var a=t[r].name.replace("data-purecounter-","");n[a.toLowerCase()]="duration"==a.toLowerCase()?parseInt(1e3*this.castDataType(t[r].value)):this.castDataType(t[r].value)}return n}},{key:"nextNumber",value:function(e,t,n,r){return r||(r="inc"),"inc"===r?n.decimals<=0?parseInt(e)+parseInt(t):parseFloat(e)+parseFloat(t):n.decimals<=0?parseInt(e)-parseInt(t):parseFloat(e)-parseFloat(t)}},{key:"formatNumber",value:function(e,t){return t.decimals<=0?parseInt(e):e.toLocaleString(void 0,{minimumFractionDigits:t.decimals,maximumFractionDigits:t.decimals})}},{key:"castDataType",value:function(e){return/^[0-9]+\.[0-9]+$/.test(e)?parseFloat(e):/^[0-9]+$/.test(e)?parseInt(e):e}},{key:"elementIsInView",value:function(e){for(var t=e.offsetTop,n=e.offsetLeft,r=e.offsetWidth,a=e.offsetHeight;e.offsetParent;)t+=(e=e.offsetParent).offsetTop,n+=e.offsetLeft;return t>=window.pageYOffset&&n>=window.pageXOffset&&t+a<=window.pageYOffset+window.innerHeight&&n+r<=window.pageXOffset+window.innerWidth}},{key:"intersectionListenerSupported",value:function(){return"IntersectionObserver"in window&&"IntersectionObserverEntry"in window&&"intersectionRatio"in window.IntersectionObserverEntry.prototype}}])&&r(t.prototype,n),a&&r(t,a),e}())}]);</script><script type="text/javascript"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRJ6K8JPZP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WRJ6K8JPZP');
+</script>
+</html>
+  
